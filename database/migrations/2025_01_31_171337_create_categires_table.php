@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('slug')->unique();
             $table->foreignId('parent_id')->nullable()->constrained('categories')->onDelete('cascade');
+           $table->string('category_image');
             $table->timestamps();
         });
     }
