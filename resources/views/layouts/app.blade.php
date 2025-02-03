@@ -11,18 +11,29 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet">
-    <link href="https://cdn.datatables.net/2.0.1/css/dataTables.bootstrap4.css" rel="stylesheet">
-
+    <!-- FontAwesome Icons (Optional, but for better UI) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    
+    <!-- DataTables CSS (Ensure it's Bootstrap 5 version) -->
+    <link href="https://cdn.datatables.net/2.0.1/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    <!-- jQuery (If Needed) - Use Latest -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
+    <!-- Bootstrap 5 JS (Includes Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- DataTables JS (Ensure it's Bootstrap 5 version) -->
+    <script src="https://cdn.datatables.net/2.0.1/js/dataTables.bootstrap5.min.js"></script>
+    
+    <!-- Toastr for Notifications -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-    <link href=
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        </script>  
+      
     <style>
         .help-block{
              color: red;
@@ -89,7 +100,7 @@
 
                                 </a>
 
-                                <div class=" dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
