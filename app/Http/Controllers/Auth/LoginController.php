@@ -42,6 +42,10 @@ class LoginController extends Controller
     }
     public function login(Request $request)
     {
+        $request->validate([
+            'email' => 'required|email',
+            'password' => 'required',
+        ]);
         $input=$request->all();
         $email=$input['email'];
         $password=$input['password'];
@@ -53,7 +57,6 @@ class LoginController extends Controller
                 Auth::login($userDB);
                 return redirect()->route('profile');
             } else {
-            
                 return back()->with('error', 'Invalid email or password');
             }
         }
